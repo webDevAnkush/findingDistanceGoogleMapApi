@@ -1,0 +1,44 @@
+/*Created by ankush on 20/5/16.*/
+
+/*Created by ankush on 20/5/16
+This project is created for to find route between two place,calculate the distance and time between them.
+you have to just input the origin place and destination place application give results of route, distance and time.*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: dimgrey;
+}
+
+.header{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+.mapPanel{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 2px 2px 10px black;
+}
+label,input{
+    margin: 10px;
+}
+
+.outputResult{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mapInfo{
+    padding: 40px;
+    margin-left: 16%;
+}
+
+#output {
+    font-size: 16px;
+}

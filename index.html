@@ -1,0 +1,56 @@
+<!--Created by ankush on 20/5/16.-->
+<!--This project is created for to find route between two place,calculate the distance and time between them.
+you have to just input the origin place and destination place application give results of route, distance and time.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display root and distance in MAP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<h3 class="header text-center">Display root and distance in MAP</h3>
+<div class="panel panel-primary mapPanel">
+    <div class="panel-body mapInfo">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label for="start">Origin:</label>
+                <input class="form-control" id="start" name="start" placeholder="Origin Point" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="end">Destination:</label>
+                <input class="form-control" id="end" name="end" placeholder="Destination Point" type="text" required>
+            </div>
+
+            <button type="button" id="find" class="btn btn-default">Submit</button>
+        </form>
+
+    </div>
+    <div class="panel panel-default outputResult">
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="output">Result:</label>
+                <blockquote  id="output" ></blockquote>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="map">
+
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHrhMd3b1SSRO6diCRTp9chb-9Abg57fU&callback=initMap"
+        async defer></script>
+<script src="js/script.js"></script>
+</body>
+</html>
